@@ -101,7 +101,7 @@
             <p>Оставьте контакты, и мы подготовим визуализацию и коммерческое предложение под вашу локацию.</p>
           </div>
           <div class="uk-cta__form">
-            <form class="uk-form uk-form--inline" action="#" method="get">
+            <form class="uk-form uk-form--inline js-price-request-form" action="#" method="post">
               <input type="text" name="name" placeholder="Ваше имя" required>
               <input type="tel" name="phone" placeholder="Телефон" required>
               <input type="email" name="email" placeholder="Email">
@@ -182,6 +182,9 @@
     </footer>
   </div>
 
+  <div class="uk-toast" id="uk-toast" aria-live="polite"></div>
+
   <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
 </body>
 </html>

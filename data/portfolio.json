@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "slug": "cafe-family-corner",
+    "title": "Детский уголок в семейном кафе",
+    "excerpt": "Небольшая игровая зона с настенными модулями и терминалом Delta 17\".",
+    "image": "/assets/images/portfolio/cafe-family-corner.jpg",
+    "industry": "HoReCa",
+    "location": "Алматы",
+    "area": "8 м²"
+  },
+  {
+    "id": 2,
+    "slug": "trc-playroom",
+    "title": "Игровая комната в ТРЦ",
+    "excerpt": "Многоуровневый эко-комплекс и сенсорные столы Delta 32\".",
+    "image": "/assets/images/portfolio/trc-playroom.jpg",
+    "industry": "ТРЦ",
+    "location": "Астана",
+    "area": "35 м²"
+  },
+  {
+    "id": 3,
+    "slug": "fitness-kids-zone",
+    "title": "Детская зона в фитнес-клубе",
+    "excerpt": "Компактная зона с напольной системой «Лес» и настенными модулями.",
+    "image": "/assets/images/portfolio/fitness-kids-zone.jpg",
+    "industry": "Фитнес",
+    "location": "Алматы",
+    "area": "12 м²"
+  },
+  {
+    "id": 4,
+    "slug": "clinic-waiting-room",
+    "title": "Игровая зона в клинике",
+    "excerpt": "Настенные модули «Речка» и «Город» в зоне ожидания.",
+    "image": "/assets/images/portfolio/clinic-waiting-room.jpg",
+    "industry": "Клиники",
+    "location": "Шымкент",
+    "area": "10 м²"
+  },
+  {
+    "id": 5,
+    "slug": "eco-restaurant-zone",
+    "title": "Эко-зона в ресторане",
+    "excerpt": "Эко-комплекс «Игровое озеро» и интерактивный терминал Delta 21\".",
+    "image": "/assets/images/portfolio/eco-restaurant-zone.jpg",
+    "industry": "HoReCa",
+    "location": "Алматы",
+    "area": "15 м²"
+  }
+]

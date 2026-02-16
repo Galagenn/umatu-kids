@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "slug": "delta-17",
+    "title": "Delta 17\" интерактивный терминал",
+    "excerpt": "Компактный интерактивный терминал для игровых зон в кафе и фитнес-клубах.",
+    "description": "Delta 17 — компактный интерактивный терминал с диагональю 17\" для небольших игровых зон. Подходит для HoReCa, фитнес-клубов и небольших детских комнат. Ударопрочное стекло, защищённый корпус и предустановленный набор игр.",
+    "images": [
+      "/assets/images/products/delta-17/1.jpg",
+      "/assets/images/products/delta-17/2.jpg"
+    ],
+    "product_type": "interaktivnye-terminaly",
+    "industry": ["HoReCa", "Фитнес"],
+    "pdf": "/assets/files/delta-17.pdf",
+    "specs": {
+      "screen": "17\"",
+      "resolution": "1920x1080",
+      "weight": "12kg",
+      "power": "220V"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "delta-21",
+    "title": "Delta 21\" интерактивный терминал",
+    "excerpt": "Универсальный терминал для торговых центров и семейных кафе.",
+    "description": "Delta 21 — универсальный терминал среднего форм-фактора. Отлично подходит для торговых центров и семейных кафе. Яркий экран, стойкий к интенсивной эксплуатации корпус и гибкая система крепления.",
+    "images": [
+      "/assets/images/products/delta-21/1.jpg",
+      "/assets/images/products/delta-21/2.jpg"
+    ],
+    "product_type": "interaktivnye-terminaly",
+    "industry": ["ТРЦ", "HoReCa"],
+    "pdf": "/assets/files/delta-21.pdf",
+    "specs": {
+      "screen": "21\"",
+      "resolution": "1920x1080",
+      "weight": "15kg",
+      "power": "220V"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "delta-32-table",
+    "title": "Сенсорный стол Delta 32\"",
+    "excerpt": "Интерактивный стол для групповых игр и занятий.",
+    "description": "Сенсорный стол Delta 32\" — решение для групповых игр и обучающих активностей. Устойчивые ножки, закалённое стекло и защищённый корпус делают его безопасным для активного использования детьми.",
+    "images": [
+      "/assets/images/products/delta-32-table/1.jpg",
+      "/assets/images/products/delta-32-table/2.jpg"
+    ],
+    "product_type": "sensornye-stoly",
+    "industry": ["ТРЦ", "HoReCa"],
+    "pdf": "/assets/files/delta-32-table.pdf",
+    "specs": {
+      "screen": "32\"",
+      "resolution": "3840x2160",
+      "weight": "35kg",
+      "power": "220V"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "delta-43-table",
+    "title": "Сенсорный стол Delta 43\"",
+    "excerpt": "Большой сенсорный стол для активных игр и обучения.",
+    "description": "Сенсорный стол Delta 43\" подойдёт для игровых комнат в ТРЦ и детских развлекательных центров. Большой экран позволяет одновременно играть нескольким детям.",
+    "images": [
+      "/assets/images/products/delta-43-table/1.jpg",
+      "/assets/images/products/delta-43-table/2.jpg"
+    ],
+    "product_type": "sensornye-stoly",
+    "industry": ["ТРЦ"],
+    "pdf": "/assets/files/delta-43-table.pdf",
+    "specs": {
+      "screen": "43\"",
+      "resolution": "3840x2160",
+      "weight": "45kg",
+      "power": "220V"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "wall-modul-river",
+    "title": "Настенный игровой модуль «Речка»",
+    "excerpt": "Компактное решение для ожиданий и коридоров.",
+    "description": "Настенный модуль «Речка» — это серия интерактивных панелей с подвижными элементами и головоломками. Занимает минимум места и подходит для коридоров, зон ожидания и ресепшенов.",
+    "images": [
+      "/assets/images/products/wall-modul-river/1.jpg"
+    ],
+    "product_type": "nastennye-moduli",
+    "industry": ["Клиники", "HoReCa"],
+    "pdf": "/assets/files/wall-modul-river.pdf",
+    "specs": {
+      "width": "1200 мм",
+      "height": "600 мм",
+      "mounting": "настенное",
+      "age": "3+"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "wall-modul-city",
+    "title": "Настенный игровой модуль «Город»",
+    "excerpt": "Тематика города с дорогами и транспортом.",
+    "description": "Модуль «Город» позволяет детям придумывать истории с машинками и персонажами. Отлично вписывается в эко-стиль и тематические пространства.",
+    "images": [
+      "/assets/images/products/wall-modul-city/1.jpg"
+    ],
+    "product_type": "nastennye-moduli",
+    "industry": ["ТРЦ", "Клиники"],
+    "pdf": "/assets/files/wall-modul-city.pdf",
+    "specs": {
+      "width": "1500 мм",
+      "height": "700 мм",
+      "mounting": "настенное",
+      "age": "3+"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "floor-system-forest",
+    "title": "Напольная игровая система «Лес»",
+    "excerpt": "Модульная конструкция с мягкими элементами.",
+    "description": "Напольная система «Лес» строится из мягких модулей и деревянных элементов. Подходит для игровых комнат и детских комнат в фитнес-клубах.",
+    "images": [
+      "/assets/images/products/floor-system-forest/1.jpg",
+      "/assets/images/products/floor-system-forest/2.jpg"
+    ],
+    "product_type": "napolnye-sistemy",
+    "industry": ["Фитнес", "ТРЦ"],
+    "pdf": "/assets/files/floor-system-forest.pdf",
+    "specs": {
+      "area": "от 6 м²",
+      "modules": "6+",
+      "age": "3-10"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "eco-complex-mountain",
+    "title": "Эко-комплекс «Горная тропа»",
+    "excerpt": "Многоуровневый эко-комплекс из дерева.",
+    "description": "Эко-комплекс «Горная тропа» сочетает лазалки, горки и интерактивные элементы. Выполнен из дерева и безопасных покрытий, подходит для премиальных пространств.",
+    "images": [
+      "/assets/images/products/eco-complex-mountain/1.jpg",
+      "/assets/images/products/eco-complex-mountain/2.jpg"
+    ],
+    "product_type": "eco-kompleksy",
+    "industry": ["HoReCa", "ТРЦ"],
+    "pdf": "/assets/files/eco-complex-mountain.pdf",
+    "specs": {
+      "area": "от 10 м²",
+      "materials": "дерево, металл, мягкие элементы",
+      "age": "4-12"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "eco-complex-lake",
+    "title": "Эко-комплекс «Игровое озеро»",
+    "excerpt": "Игровая зона в морской тематике для ТРЦ и кафе.",
+    "description": "«Игровое озеро» — модульный комплекс с невысокими уровнями и безопасными бортиками. Отлично подходит для семейных ресторанов и торговых центров.",
+    "images": [
+      "/assets/images/products/eco-complex-lake/1.jpg"
+    ],
+    "product_type": "eco-kompleksy",
+    "industry": ["HoReCa"],
+    "pdf": "/assets/files/eco-complex-lake.pdf",
+    "specs": {
+      "area": "от 8 м²",
+      "materials": "дерево, ткань, мягкие элементы",
+      "age": "3-10"
+    }
+  }
+]

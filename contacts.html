@@ -39,7 +39,7 @@
               <li><strong>Адрес:</strong> Казахстан, г. Алматы</li>
             </ul>
             <div class="uk-contact-form">
-              <form class="uk-form" action="#" method="get">
+              <form class="uk-form" action="#" method="post">
                 <input type="text" name="name" placeholder="Ваше имя" required>
                 <input type="tel" name="phone" placeholder="Телефон" required>
                 <textarea name="message" placeholder="Сообщение"></textarea>
@@ -78,6 +78,16 @@
     </footer>
   </div>
 
+  <div class="uk-toast" id="uk-toast" aria-live="polite"></div>
+
   <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/map.js"></script>
+  <script>
+    // Если Yandex Maps API подключён, инициализируем карту
+    if (typeof initYandexMap === 'function') {
+      initYandexMap('uk-yamap', 43.238293, 76.945465);
+    }
+  </script>
 </body>
 </html>

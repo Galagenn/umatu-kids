@@ -31,67 +31,23 @@
       <section class="uk-section">
         <div class="uk-container">
           <header class="uk-section__header uk-section__header--center">
-            <h1>Интерактивные игровые терминалы</h1>
-            <p>Сенсорные столы и панели для детских игровых зон. Проект зоны за 24 часа — бесплатно.</p>
+            <h1>Решения UmaTu kids</h1>
+            <p>Интерактивные терминалы, настенные модули, напольные системы и эко-комплексы для детских игровых зон.</p>
           </header>
 
           <div class="uk-filter" data-filter="products">
-            <button class="uk-filter__btn is-active" data-type="">Все</button>
-            <button class="uk-filter__btn" data-type="terminaly">Терминалы</button>
-            <button class="uk-filter__btn" data-type="stoly">Сенсорные столы</button>
-            <button class="uk-filter__btn" data-type="paneli">Панели</button>
+            <button class="uk-filter__btn is-active" data-type="">Все решения</button>
+            <button class="uk-filter__btn" data-type="interaktivnye-terminaly">Интерактивные терминалы</button>
+            <button class="uk-filter__btn" data-type="sensornye-stoly">Сенсорные столы</button>
+            <button class="uk-filter__btn" data-type="nastennye-moduli">Настенные модули</button>
+            <button class="uk-filter__btn" data-type="napolnye-sistemy">Напольные системы</button>
+            <button class="uk-filter__btn" data-type="eco-kompleksy">Эко-комплексы</button>
           </div>
 
           <div class="uk-grid uk-grid--cards" id="product-grid">
-            <a class="uk-card uk-card--product is-visible" href="#" data-type="terminaly">
-              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
-              <div class="uk-card__body">
-                <h3 class="uk-card__title">Delta 17 дюймов</h3>
-                <p class="uk-card__excerpt">Компактный интерактивный терминал для игровых зон в кафе и фитнес-клубах.</p>
-                <span class="uk-card__link">Подробнее</span>
-              </div>
-            </a>
-            <a class="uk-card uk-card--product is-visible" href="#" data-type="stoly">
-              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
-              <div class="uk-card__body">
-                <h3 class="uk-card__title">Сенсорный стол Delta 32 дюйма</h3>
-                <p class="uk-card__excerpt">Стол для групповых игр и занятий. Ударопрочное стекло.</p>
-                <span class="uk-card__link">Подробнее</span>
-              </div>
-            </a>
-            <a class="uk-card uk-card--product is-visible" href="#" data-type="terminaly">
-              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
-              <div class="uk-card__body">
-                <h3 class="uk-card__title">Delta 21 дюйм</h3>
-                <p class="uk-card__excerpt">Универсальный терминал для торговых центров и детских комнат.</p>
-                <span class="uk-card__link">Подробнее</span>
-              </div>
-            </a>
-            <a class="uk-card uk-card--product is-visible" href="#" data-type="stoly">
-              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
-              <div class="uk-card__body">
-                <h3 class="uk-card__title">Delta 43 дюйма</h3>
-                <p class="uk-card__excerpt">Большой сенсорный стол для активных игр и обучения.</p>
-                <span class="uk-card__link">Подробнее</span>
-              </div>
-            </a>
-            <a class="uk-card uk-card--product is-visible" href="#" data-type="paneli">
-              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
-              <div class="uk-card__body">
-                <h3 class="uk-card__title">Игровая башня с сенсорным экраном</h3>
-                <p class="uk-card__excerpt">Комплекс для эко-стиля и тематических зон.</p>
-                <span class="uk-card__link">Подробнее</span>
-              </div>
-            </a>
-            <a class="uk-card uk-card--product is-visible" href="#" data-type="paneli">
-              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
-              <div class="uk-card__body">
-                <h3 class="uk-card__title">Delta 65 дюймов</h3>
-                <p class="uk-card__excerpt">Панель большого формата для общественных пространств.</p>
-                <span class="uk-card__link">Подробнее</span>
-              </div>
-            </a>
           </div>
+
+          <div class="uk-pagination" id="product-pagination"></div>
         </div>
       </section>
     </main>
@@ -122,5 +78,6 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/catalog-filter.js"></script>
 </body>
 </html>
