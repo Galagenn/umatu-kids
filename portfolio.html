@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Портфолио проектов | UmaTu kids</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="uk-site-header">
+    <div class="uk-container uk-site-header__inner">
+      <div class="uk-site-header__logo">
+        <a href="index.html"><span class="uk-site-header__brand">UmaTu kids</span></a>
+      </div>
+      <nav class="uk-site-header__nav" aria-label="Главное меню">
+        <button class="uk-burger" type="button" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        <ul class="uk-menu">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="index.html#about">О компании</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <a href="index.html#price-request" class="uk-btn uk-btn--primary uk-site-header__cta">Запросить прайс-лист</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="uk-site-wrapper">
+    <main class="site-main uk-archive uk-archive--portfolio">
+      <section class="uk-section">
+        <div class="uk-container">
+          <header class="uk-section__header uk-section__header--center">
+            <h1>Портфолио реализованных проектов</h1>
+            <p>Игровые комнаты и зоны для HoReCa, ТРЦ, клиник и других пространств по всему Казахстану.</p>
+          </header>
+
+          <div class="uk-filter" data-filter="portfolio">
+            <button class="uk-filter__btn is-active" data-industry="">Все отрасли</button>
+            <button class="uk-filter__btn" data-industry="horeca">HoReCa</button>
+            <button class="uk-filter__btn" data-industry="trc">ТРЦ</button>
+            <button class="uk-filter__btn" data-industry="fitness">Фитнес</button>
+            <button class="uk-filter__btn" data-industry="clinics">Клиники</button>
+          </div>
+
+          <div class="uk-grid uk-grid--cards" id="portfolio-grid">
+            <a class="uk-card uk-card--portfolio is-visible" href="#" data-industry="horeca">
+              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
+              <div class="uk-card__body">
+                <h3 class="uk-card__title">Детский уголок в кафе</h3>
+                <p class="uk-card__excerpt">Яркий игровой уголок в современном семейном кафе.</p>
+                <span class="uk-card__link">Подробнее</span>
+              </div>
+            </a>
+            <a class="uk-card uk-card--portfolio is-visible" href="#" data-industry="trc">
+              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
+              <div class="uk-card__body">
+                <h3 class="uk-card__title">Игровая комната в ТРЦ</h3>
+                <p class="uk-card__excerpt">Многоуровневая игровая зона в торгово-развлекательном центре.</p>
+                <span class="uk-card__link">Подробнее</span>
+              </div>
+            </a>
+            <a class="uk-card uk-card--portfolio is-visible" href="#" data-industry="fitness">
+              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
+              <div class="uk-card__body">
+                <h3 class="uk-card__title">Детская игровая в фитнес-клубе</h3>
+                <p class="uk-card__excerpt">Компактная зона для детей посетителей клуба.</p>
+                <span class="uk-card__link">Подробнее</span>
+              </div>
+            </a>
+            <a class="uk-card uk-card--portfolio is-visible" href="#" data-industry="horeca">
+              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
+              <div class="uk-card__body">
+                <h3 class="uk-card__title">Детская зона в ресторане</h3>
+                <p class="uk-card__excerpt">Эко-стиль, мягкие модули и интерактивный стол.</p>
+                <span class="uk-card__link">Подробнее</span>
+              </div>
+            </a>
+            <a class="uk-card uk-card--portfolio is-visible" href="#" data-industry="trc">
+              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
+              <div class="uk-card__body">
+                <h3 class="uk-card__title">Игровая комната в отеле на горнолыжном курорте</h3>
+                <p class="uk-card__excerpt">Тематическая зона для семейного отдыха.</p>
+                <span class="uk-card__link">Подробнее</span>
+              </div>
+            </a>
+            <a class="uk-card uk-card--portfolio is-visible" href="#" data-industry="clinics">
+              <div class="uk-card__media"><div class="uk-card__img-placeholder"></div></div>
+              <div class="uk-card__body">
+                <h3 class="uk-card__title">Детский уголок в клинике</h3>
+                <p class="uk-card__excerpt">Спокойная игровая зона в зоне ожидания.</p>
+                <span class="uk-card__link">Подробнее</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="uk-site-footer">
+      <div class="uk-container uk-site-footer__top">
+        <div class="uk-site-footer__col">
+          <h3>Каталог</h3>
+          <ul class="uk-footer-menu">
+            <li><a href="catalog.html">Интерактивные терминалы</a></li>
+            <li><a href="catalog.html">Настенные модули</a></li>
+          </ul>
+        </div>
+        <div class="uk-site-footer__col">
+          <h3>Контакты</h3>
+          <p class="uk-site-footer__contacts">Телефон: 8 (800) 000-00-00<br>Email: info@umatu.kz</p>
+        </div>
+        <div class="uk-site-footer__col">
+          <h3>Режим работы</h3>
+          <p>Пн–Пт: 09:00–18:00</p>
+        </div>
+      </div>
+      <div class="uk-container uk-site-footer__bottom">
+        <p class="uk-site-footer__copy">© 2025 UmaTu kids. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
