@@ -36,10 +36,13 @@
       name.focus();
       return false;
     }
-    if (phone && !phone.value.trim()) {
-      showToast('Введите телефон', true);
-      phone.focus();
-      return false;
+    if (phone) {
+      var phoneDigits = phone.value.replace(/\D/g, '');
+      if (!phone.value.trim() || phoneDigits.length < 11) {
+        showToast('Введите телефон полностью', true);
+        phone.focus();
+        return false;
+      }
     }
     if (email && email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
       showToast('Проверьте корректность email', true);
@@ -97,6 +100,51 @@
       });
   }
 
+  function formatPhone(value) {
+    var digits = value.replace(/\D/g, '');
+    if (digits[0] === '8') {
+      digits = '7' + digits.slice(1);
+    }
+    if (digits[0] !== '7') {
+      digits = '7' + digits;
+    }
+    digits = digits.slice(0, 11);
+
+    var result = '+7';
+    if (digits.length > 1) {
+      result += ' (' + digits.slice(1, 4);
+      if (digits.length >= 4) result += ')';
+    }
+    if (digits.length >= 5) {
+      result += ' ' + digits.slice(4, 7);
+    }
+    if (digits.length >= 8) {
+      result += '-' + digits.slice(7, 9);
+    }
+    if (digits.length >= 10) {
+      result += '-' + digits.slice(9, 11);
+    }
+    return result;
+  }
+
+  function attachPhoneMask() {
+    var phones = document.querySelectorAll('input[type="tel"]');
+    phones.forEach(function (input) {
+      input.addEventListener('input', function () {
+        var caret = input.selectionStart;
+        var formatted = formatPhone(input.value);
+        input.value = formatted;
+        input.setSelectionRange(formatted.length, formatted.length);
+      });
+      input.addEventListener('focus', function () {
+        if (!input.value.trim()) {
+          input.value = '+7 ';
+          input.setSelectionRange(input.value.length, input.value.length);
+        }
+      });
+    });
+  }
+
   function initForms() {
     document.querySelectorAll('form.uk-form').forEach(function (form) {
       form.addEventListener('submit', handleSubmit);
@@ -120,6 +168,8 @@
         }
       });
     });
+
+    attachPhoneMask();
   }
 
   if (document.readyState === 'loading') {

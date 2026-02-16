@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{title}} | UmaTu kids</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Товар UmaTu kids</title>
+  <meta name="description" content="Детальная страница решения UmaTu kids для детских игровых зон: описание, характеристики и галерея.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="uk-site-header">
     <div class="uk-container uk-site-header__inner">
       <div class="uk-site-header__logo">
-        <a href="../index.html"><span class="uk-site-header__brand">UmaTu kids</span></a>
+        <a href="index.html"><span class="uk-site-header__brand">UmaTu kids</span></a>
       </div>
       <nav class="uk-site-header__nav" aria-label="Главное меню">
         <button class="uk-burger" type="button" aria-label="Открыть меню"><span></span><span></span><span></span></button>
         <ul class="uk-menu">
-          <li><a href="../catalog.html">Каталог</a></li>
-          <li><a href="../index.html#about">О компании</a></li>
-          <li><a href="../portfolio.html">Портфолио</a></li>
-          <li><a href="../contacts.html">Контакты</a></li>
-          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="index.html#about">О компании</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="faq.html">FAQ</a></li>
         </ul>
-        <a href="#price-modal" class="uk-btn uk-btn--primary uk-site-header__cta" data-modal-open="price-modal">Запросить прайс-лист</a>
+        <a href="index.html#price-request" class="uk-btn uk-btn--primary uk-site-header__cta">Запросить прайс-лист</a>
       </nav>
     </div>
   </header>
@@ -29,33 +30,11 @@
   <div class="uk-site-wrapper">
     <main class="site-main uk-single uk-single--product">
       <section class="uk-section">
-        <div class="uk-container uk-single-product">
-          <div class="uk-single-product__media">
-            <div class="uk-single-product__image-main">
-              <img src="{{image_main}}" srcset="{{image_main}} 1x, {{image_main_2x}} 2x" alt="{{title}}" loading="lazy" decoding="async">
-            </div>
-            <div class="uk-single-product__thumbs">
-              {{thumbnails}}
-            </div>
-          </div>
-          <div class="uk-single-product__content">
-            <h1>{{title}}</h1>
-            <p class="uk-single-product__excerpt">{{excerpt}}</p>
-            <div class="uk-single-product__description">
-              <p>{{description}}</p>
-            </div>
-            <div class="uk-single-product__specs">
-              <h2>Характеристики</h2>
-              <table>
-                <tbody>
-                  {{spec_rows}}
-                </tbody>
-              </table>
-              {{pdf_link}}
-            </div>
-            <div class="uk-single-product__actions">
-              <button type="button" class="uk-btn uk-btn--primary" data-modal-open="price-modal">Запросить прайс-лист</button>
-            </div>
+        <div class="uk-container">
+          <div id="product-view"></div>
+          <div id="product-not-found" class="uk-empty" style="display:none; margin-top:24px;">
+            <h1>Товар не найден</h1>
+            <p>К сожалению, запрошенный товар недоступен или был удалён. Перейдите в <a href="catalog.html" class="uk-link">каталог решений</a>, чтобы выбрать другое решение.</p>
           </div>
         </div>
       </section>
@@ -66,9 +45,9 @@
         <div class="uk-site-footer__col">
           <h3>Каталог</h3>
           <ul class="uk-footer-menu">
-            <li><a href="../catalog.html">Интерактивные терминалы</a></li>
-            <li><a href="../catalog.html">Настенные модули</a></li>
-            <li><a href="../catalog.html">Напольные системы</a></li>
+            <li><a href="catalog.html">Интерактивные терминалы</a></li>
+            <li><a href="catalog.html">Настенные модули</a></li>
+            <li><a href="catalog.html">Напольные системы</a></li>
           </ul>
         </div>
         <div class="uk-site-footer__col">
@@ -103,8 +82,9 @@
 
   <div class="uk-toast" id="uk-toast" aria-live="polite"></div>
 
-  <script src="../js/main.js"></script>
-  <script src="../js/forms.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/product-page.js"></script>
 </body>
 </html>
 

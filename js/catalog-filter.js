@@ -4,12 +4,14 @@
   var PRODUCTS_URL = 'data/products.json';
   var productGrid = document.getElementById('product-grid');
   var filterWrap = document.querySelector('[data-filter="products"]');
+  var industryFilterWrap = document.querySelector('[data-filter="products-industry"]');
   var paginationWrap = document.getElementById('product-pagination');
 
   if (!productGrid) return;
 
   var allProducts = [];
   var currentFilter = '';
+  var currentIndustry = '';
   var currentPage = 1;
   var perPage = 6;
 
@@ -27,11 +29,20 @@
   }
 
   function applyFilters(filters) {
-    currentFilter = filters.product_type || '';
+    currentFilter = filters.product_type != null ? filters.product_type : currentFilter || '';
+    currentIndustry = filters.industry != null ? filters.industry : currentIndustry || '';
     currentPage = 1;
     var items = allProducts.filter(function (item) {
-      if (!currentFilter) return true;
-      return item.product_type === currentFilter;
+      if (currentFilter && item.product_type !== currentFilter) {
+        return false;
+      }
+      if (currentIndustry) {
+        var industries = Array.isArray(item.industry) ? item.industry : [];
+        if (industries.indexOf(currentIndustry) === -1) {
+          return false;
+        }
+      }
+      return true;
     });
     renderProducts(items);
     return items;
@@ -40,7 +51,7 @@
   function createProductCard(item) {
     var link = document.createElement('a');
     link.className = 'uk-card uk-card--product is-visible';
-    link.href = 'product/' + item.slug + '.html';
+    link.href = 'product.html?slug=' + encodeURIComponent(item.slug);
 
     var inner = document.createElement('div');
     inner.className = 'uk-card__inner';
@@ -147,6 +158,19 @@
         btn.classList.add('is-active');
         var type = btn.getAttribute('data-type') || '';
         applyFilters({ product_type: type });
+      });
+    });
+  }
+
+  if (industryFilterWrap) {
+    industryFilterWrap.querySelectorAll('.uk-filter__btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        industryFilterWrap.querySelectorAll('.uk-filter__btn').forEach(function (b) {
+          b.classList.remove('is-active');
+        });
+        btn.classList.add('is-active');
+        var ind = btn.getAttribute('data-industry') || '';
+        applyFilters({ industry: ind });
       });
     });
   }
