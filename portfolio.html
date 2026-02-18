@@ -21,7 +21,7 @@
           <li><a href="contacts.html">Контакты</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
-        <a href="https://wa.me/77753069090?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82%20%D0%BD%D0%B0%20%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B7%D0%BE%D0%BD%D1%8B%20UmaTu%20kids." target="_blank" rel="noopener noreferrer" class="uk-btn uk-btn--primary uk-site-header__cta">Запросить прайс-лист</a>
+        <a href="#" data-modal-open="price-modal" class="uk-btn uk-btn--primary uk-site-header__cta">Запросить прайс-лист</a>
       </nav>
     </div>
   </header>
@@ -129,6 +129,23 @@
     </footer>
   </div>
 
+  <div class="uk-modal" id="price-modal" aria-hidden="true">
+    <div class="uk-modal__backdrop" data-modal-close></div>
+    <div class="uk-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="price-modal-title">
+      <button class="uk-modal__close" type="button" aria-label="Закрыть" data-modal-close>&times;</button>
+      <h2 id="price-modal-title">Запросить прайс-лист</h2>
+      <div class="uk-modal__content">
+        <p class="uk-modal__content-label">Номер Телеконтакта</p>
+        <div class="uk-modal__phone">8 (775) 306 90 90</div>
+        <a href="tel:+77753069090" class="uk-btn uk-btn--primary uk-btn--full">Позвонить</a>
+        <a href="https://wa.me/77753069090" target="_blank" rel="noopener noreferrer" class="uk-btn uk-btn--ghost uk-btn--full">Написать WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-toast" id="uk-toast" aria-live="polite"></div>
+
   <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/forms.js"></script>
 </body>
 </html>
