@@ -22,7 +22,7 @@
           <li><a href="contacts.html">Контакты</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
-        <a href="index.html#price-request" class="uk-btn uk-btn--primary uk-site-header__cta">Запросить прайс-лист</a>
+        <a href="#" data-modal-open="price-modal" class="uk-btn uk-btn--primary uk-site-header__cta">Запросить прайс-лист</a>
       </nav>
     </div>
   </header>
@@ -94,7 +94,25 @@
     </footer>
   </div>
 
+  <div class="uk-modal" id="price-modal" aria-hidden="true">
+    <div class="uk-modal__backdrop" data-modal-close></div>
+    <div class="uk-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="price-modal-title">
+      <button class="uk-modal__close" type="button" aria-label="Закрыть" data-modal-close>&times;</button>
+      <h2 id="price-modal-title">Запросить прайс-лист</h2>
+      <form class="uk-form js-price-request-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Комментарий к запросу"></textarea>
+        <button type="submit" class="uk-btn uk-btn--primary">Отправить запрос</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="uk-toast" id="uk-toast" aria-live="polite"></div>
+
   <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/forms.js"></script>
   <script type="module" src="/js/catalog-filter.js"></script>
 </body>
 </html>

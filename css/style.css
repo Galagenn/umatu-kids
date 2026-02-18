@@ -475,6 +475,18 @@ a { color: inherit; text-decoration: none; }
   resize: vertical;
 }
 
+/* Form in modal: make fields visible on white */
+.uk-modal__dialog .uk-form input,
+.uk-modal__dialog .uk-form textarea {
+  border-color: var(--color-border);
+  background: #fff;
+  color: var(--color-dark);
+}
+.uk-modal__dialog .uk-form input::placeholder,
+.uk-modal__dialog .uk-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
 /* Contact list */
 .uk-contact-list {
   list-style: none;
@@ -538,7 +550,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Anchor offset for sticky header */
 #about {
-  scroll-margin-top: 88px;
+  scroll-margin-top: 70px;
 }
 
 /* Responsive */
@@ -762,5 +774,9 @@ a { color: inherit; text-decoration: none; }
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+  }
+
+  #about {
+    scroll-margin-top: 45px;
   }
 }

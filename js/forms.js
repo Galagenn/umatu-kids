@@ -63,41 +63,29 @@
       payload[key] = value;
     });
 
-    fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    })
-      .then(function (res) {
-        if (!res.ok) {
-          throw new Error('Network error');
-        }
-        return res.json().catch(function () { return { status: 'success' }; });
-      })
-      .then(function (data) {
-        if (data && data.status === 'success') {
-          showToast('Заявка успешно отправлена', false);
-          form.reset();
-          var modal = form.closest('.uk-modal');
-          if (modal) {
-            closeModal(modal);
-          }
-        } else {
-          showToast('Ошибка при отправке. Попробуйте ещё раз.', true);
-        }
-      })
-      .catch(function () {
-        setTimeout(function () {
-          showToast('Заявка отправлена (mock)', false);
-          form.reset();
-          var modal = form.closest('.uk-modal');
-          if (modal) {
-            closeModal(modal);
-          }
-        }, 600);
-      });
+    var rawNumber = '87753069090';
+    var digits = rawNumber.replace(/\D/g, '');
+    if (digits[0] === '8') {
+      digits = '7' + digits.slice(1);
+    }
+
+    var parts = [];
+    if (payload.name) parts.push('Имя: ' + payload.name);
+    if (payload.phone) parts.push('Телефон: ' + payload.phone);
+    if (payload.email) parts.push('Email: ' + payload.email);
+    if (payload.message) parts.push('Комментарий: ' + payload.message);
+
+    var text = encodeURIComponent(parts.join('\n'));
+    var whatsappUrl = 'https://wa.me/' + digits + (text ? ('?text=' + text) : '');
+
+    showToast('Сейчас откроется WhatsApp для отправки заявки', false);
+    form.reset();
+    var modal = form.closest('.uk-modal');
+    if (modal) {
+      closeModal(modal);
+    }
+
+    window.open(whatsappUrl, '_blank');
   }
 
   function formatPhone(value) {
