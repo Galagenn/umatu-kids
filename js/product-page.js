@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var PRODUCTS_URL = 'data/products.json';
+  var PRODUCTS_URL = '/data/products.json';
   var container = document.getElementById('product-view');
   var notFound = document.getElementById('product-not-found');
 

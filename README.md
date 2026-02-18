@@ -123,21 +123,16 @@ pnpm preview
 function initYandexMap(containerId, lat, lng) { ... }
 ```
 
-На странице `contacts.html` карта инициализируется так:
+На странице `contacts.html` карта инициализируется автоматически (если найден контейнер `#uk-yamap`).
 
 ```html
-<script src="js/map.js"></script>
-<script>
-  if (typeof initYandexMap === 'function') {
-    initYandexMap('uk-yamap', 43.238293, 76.945465);
-  }
-</script>
+<script type="module" src="js/map.js"></script>
 ```
 
 Подключение Яндекс.Карт:
 
 1. Получи ключ API Яндекс.Карт (JavaScript API 2.1).
-2. Вставь тег скрипта перед подключением `js/map.js`, например:
+2. Вставь тег скрипта **перед** подключением `js/map.js`, например:
 
    ```html
    <script src="https://api-maps.yandex.ru/2.1/?apikey=YMAPS_API_KEY&lang=ru_RU" defer></script>
@@ -146,4 +141,15 @@ function initYandexMap(containerId, lat, lng) { ... }
 3. Замени `YMAPS_API_KEY` на актуальный ключ. Можно хранить его в `.env` при дальнейшем переносе на сборку (например, через Vite) и прокидывать в HTML.
 
 Если API не подключен, модуль `map.js` ничего не ломает — остаётся декоративный плейсхолдер карты.
+
+### Деплой на Vercel (открывались все страницы)
+
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Clean URLs**: включены через `vercel.json`, поэтому страницы открываются так:
+  - `/catalog` → `catalog.html`
+  - `/contacts` → `contacts.html`
+  - `/faq` → `faq.html`
+  - `/portfolio` → `portfolio.html`
+  - `/product?slug=...` → `product.html?slug=...`
 

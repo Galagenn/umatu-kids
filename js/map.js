@@ -28,5 +28,17 @@
   }
 
   window.initYandexMap = initYandexMap;
+
+  function autoInit() {
+    var el = document.getElementById('uk-yamap');
+    if (!el) return;
+    initYandexMap('uk-yamap', 43.238293, 76.945465);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', autoInit);
+  } else {
+    autoInit();
+  }
 })();
 

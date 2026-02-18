@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Контакты | UmaTu kids</title>
   <meta name="description" content="Контакты UmaTu kids: телефон, email и адрес в Алматы. Свяжитесь с нами для проекта детской игровой зоны.">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header class="uk-site-header">
@@ -89,14 +89,8 @@
 
   <div class="uk-toast" id="uk-toast" aria-live="polite"></div>
 
-  <script src="js/main.js"></script>
-  <script src="js/forms.js"></script>
-  <script src="js/map.js"></script>
-  <script>
-    // Если Yandex Maps API подключён, инициализируем карту
-    if (typeof initYandexMap === 'function') {
-      initYandexMap('uk-yamap', 43.238293, 76.945465);
-    }
-  </script>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/forms.js"></script>
+  <script type="module" src="/js/map.js"></script>
 </body>
 </html>

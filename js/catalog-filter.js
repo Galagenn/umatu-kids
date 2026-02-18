@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var PRODUCTS_URL = 'data/products.json';
+  var PRODUCTS_URL = '/data/products.json';
   var productGrid = document.getElementById('product-grid');
   var filterWrap = document.querySelector('[data-filter="products"]');
   var industryFilterWrap = document.querySelector('[data-filter="products-industry"]');
