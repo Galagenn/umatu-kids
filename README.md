@@ -153,3 +153,5 @@ function initYandexMap(containerId, lat, lng) { ... }
   - `/portfolio` → `portfolio.html`
   - `/product?slug=...` → `product.html?slug=...`
 
+Важно: `node_modules` **не должен** быть в git. На Vercel (Linux) Windows-зависимости (например, `@esbuild/win32-x64`) ломают сборку.
+

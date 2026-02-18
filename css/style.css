@@ -433,6 +433,12 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   padding: 16px;
 }
+.uk-split__map-placeholder img,
+.uk-map-placeholder img {
+  max-width: 100%;
+  border-radius: inherit;
+  display: block;
+}
 .uk-contacts__map #uk-yamap { min-height: 280px; }
 
 /* CTA */
@@ -530,6 +536,11 @@ a { color: inherit; text-decoration: none; }
 /* Page */
 .uk-page--faq .uk-section__header { margin-bottom: 40px; }
 
+/* Anchor offset for sticky header */
+#about {
+  scroll-margin-top: 88px;
+}
+
 /* Responsive */
 @media (max-width: 960px) {
   .uk-hero__inner,
@@ -613,7 +624,7 @@ a { color: inherit; text-decoration: none; }
   /* Кнопки: компактнее */
   .uk-btn {
     padding: 8px 16px;
-    font-size: 13px;
+    font-size: 10px;
   }
 
   /* Каталог: одна колонка, компактные карточки */

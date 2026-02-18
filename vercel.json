@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "installCommand": "rm -rf node_modules && npm ci",
   "rewrites": [
     { "source": "/catalog", "destination": "/catalog.html" },
     { "source": "/contacts", "destination": "/contacts.html" },

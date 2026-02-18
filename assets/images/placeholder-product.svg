@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">$>B> B>20@0 UmaTu kids</title>
+  <desc id="desc">@5<5==0O 703;CH:0 4;O D>B> B>20@0. 0<5=8B5 =0 @50;L=>5 87>1@065=85.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f2ec"/>
+      <stop offset="0.5" stop-color="#ffe3d4"/>
+      <stop offset="1" stop-color="#ffb38a"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="480" rx="32" ry="32" fill="url(#bg)"/>
+  <rect x="64" y="80" width="672" height="320" rx="24" ry="24" fill="rgba(255,255,255,0.75)"/>
+  <path d="M160 336 L256 224 L336 320 L416 208 L560 336 Z" fill="#ff6b3d" opacity="0.16"/>
+  <circle cx="256" cy="200" r="36" fill="#ff6b3d" opacity="0.22"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" fill="#1b1b1f" opacity="0.78">
+    $>B> B>20@0 UmaTu kids
+  </text>
+  <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" fill="#1b1b1f" opacity="0.6">
+    0<5=8B5 D09; 2 /assets/images 8;8 ?CBL 2 products.json
+  </text>
+</svg>
+
